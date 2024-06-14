@@ -1,5 +1,12 @@
 # moose-next-framework-v1-shadcn
-The v1 of the New Moose Next Framework w/ Tailwind, Shadcn, Zustand &amp; Supabase
+
+The v2.0 of the New Moose Next Framework w/ Tailwind, Shadcn, Zustand &amp; Supabase
+
+![Project Image](https://res.cloudinary.com/dyb0qa58h/image/upload/v1718362733/moose-framework-v2_ju94z2.png)
+
+## Features
+
+## Only Ui/Ux in this part w/ Shadcn and Tailwind
 
 ## Getting Started
 

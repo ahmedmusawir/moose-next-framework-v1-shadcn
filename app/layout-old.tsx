@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Moose Next Framework v1",
-  description: "This is just ui/ux framework with Shadcn",
+  description: "This is a framework with Shadcn",
 };
 
 export default function RootLayout({
@@ -19,14 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <div className="flex flex-1">
-            <div className="hidden md:block h-auto flex-shrink-0 border-4 w-[25rem]">
-              <Sidebar />
-            </div>
-            <div className="flex-1 p-5 md:max-w-[1140px]">{children}</div>
+        <Navbar />
+        <div className="flex">
+          <div className="hidden md:block h-[100vh] border-4 w-[25rem]">
+            <Sidebar />
           </div>
+          <div className="w-full p-5 md:max-w-[1140px]">{children}</div>
         </div>
       </body>
     </html>
