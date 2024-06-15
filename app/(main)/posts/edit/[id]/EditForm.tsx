@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
 
 interface Props {
   id: string;
@@ -37,6 +38,7 @@ const formSchema = z.object({
 });
 
 const EditForm = ({ id }: Props) => {
+  const { toast } = useToast();
   const post = posts.find((post) => post.id === id);
   //   console.log("The Post:", post);
 
@@ -52,6 +54,10 @@ const EditForm = ({ id }: Props) => {
 
   const handleSubmit = (data: z.infer<typeof formSchema>) => {
     console.log("form Submitted by the Moose...", data);
+    toast({
+      title: "Post has been updated successfully",
+      description: `Updated by ${post?.author} on ${post?.date}`,
+    });
   };
 
   return (
@@ -77,7 +83,7 @@ const EditForm = ({ id }: Props) => {
                 <FormDescription>
                   This is title of the Post {post?.id}
                 </FormDescription>
-                <FormMessage />
+                <FormMessage className="dark:text-red-300" />
               </FormItem>
             )}
           />
@@ -100,7 +106,7 @@ const EditForm = ({ id }: Props) => {
                 <FormDescription>
                   This is the content of the Post {post?.id}
                 </FormDescription>
-                <FormMessage />
+                <FormMessage className="dark:text-red-300" />
               </FormItem>
             )}
           />
@@ -122,7 +128,7 @@ const EditForm = ({ id }: Props) => {
                 <FormDescription>
                   This is the author of the Post {post?.id}
                 </FormDescription>
-                <FormMessage />
+                <FormMessage className="dark:text-red-300" />
               </FormItem>
             )}
           />
@@ -144,7 +150,7 @@ const EditForm = ({ id }: Props) => {
                 <FormDescription>
                   This is the date of the Post {post?.id}
                 </FormDescription>
-                <FormMessage />
+                <FormMessage className="dark:text-red-300" />
               </FormItem>
             )}
           />
