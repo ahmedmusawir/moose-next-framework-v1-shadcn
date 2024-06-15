@@ -2,6 +2,12 @@
 
 The v2.0 of the New Moose Next Framework w/ Tailwind, Shadcn, Zustand &amp; Supabase
 
+- Dashboard
+- Posts Admin page
+- Post Edit page w/ form and zod validation
+- Login/Register page w/ form and zod validation
+- Dark mode implemented
+
 ![Project Image](https://res.cloudinary.com/dyb0qa58h/image/upload/v1718362733/moose-framework-v2_ju94z2.png)
 
 ## Features
