@@ -1,6 +1,8 @@
 # moose-next-framework-v1-shadcn
 
-The v2.0 of the New Moose Next Framework w/ Tailwind, Shadcn, Zustand &amp; Supabase
+The v1.0 of the New Moose Next Framework w/ Tailwind, Shadcn, Zustand &amp; Supabase
+
+## Covered in v1
 
 - Dashboard
 - Posts Admin page
